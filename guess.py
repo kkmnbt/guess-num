@@ -3,9 +3,16 @@
 # 猜对话 印出“终于猜对了”
 # 猜错的话 要告诉他 比答案大/小
 # 延申功能 印出猜了几次
+# 延申功能 让使用者决定随机数范围
+
 import random
 
-r = random.randint(1,100)
+start  = input('用户输入一个初始数值')
+end  = input('用户输入一个结束数值')
+start = int(start)
+end = int(end)
+
+r = random.randint(start, end)
 count = 0
 while True:
 	count += 1 #count = count + 1
